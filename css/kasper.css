@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+  --main-color:#19c8fa;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: black;
+  }
+
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  /* Small */
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+   ul{
+    list-style: none;
+   }
+
+
+   /**************************/
+
+
+
+   /* Start Header */
+   header{
+    width: 100%;
+    position: fixed;
+    background-color: transparent;
+   }
+   header .container{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 97px;
+    padding: 0;
+
+   }
+   header .container::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 103%;
+    height: 1px;
+    bottom: 0px;
+    background-color: #a2a2a2;
+    /* left: 15px; */
+    /* z-index: -1; */
+   }
+   header .container image{ 
+    height: 40px;
+   }
+
+   header .container nav{ 
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+   }
+   header .container nav ul{ 
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+   }
+   @media (max-width: 767px) {
+    header .container nav ul{
+      display: none;
+    }
+  }
+   header .container nav ul a{ 
+    position: relative;
+    text-decoration: none;
+    padding: 40px 10px ;
+    color: white;
+    font-size: 17px;
+    bottom: 0;
+   }
+   header .container nav ul a:hover{ 
+    border-bottom: 1px solid var(--main-color);
+    color: var(--main-color);
+    z-index: 500;
+   }
+   header .container nav ul .active{ 
+    border-bottom: 1px solid var(--main-color);
+    color: var(--main-color);
+    z-index: 500;
+   }
+   header .container nav .form{ 
+    margin-left: 20px;
+    width: 30px;
+    height: 30px;
+    border-left: 1px solid white;
+    position: relative;
+   }
+
+   i{
+    margin-left: 12px;
+    color: aliceblue;
+    font-size: 20px;
+    right: 0;
+    top: 5px;
+    position: absolute;
+   }
+  
+
+   /* end Header */
+  
+   section .mk {
+    background-image: url(../images/landing.jpg);
+    height: 100vh;
+   }
+   section .mk2 {
+    background-image: url(../images/landing.jpg);
+    height: 100vh;
+   }
+   
